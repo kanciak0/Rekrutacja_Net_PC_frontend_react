@@ -18,11 +18,11 @@ function GetEmployees() {
       if (response.status === 200) {
         setEmployeeIds(response.data);
       } else {
-        // Handle error
+
         console.error('Error fetching employee IDs');
       }
     } catch (error) {
-      // Handle network or other errors
+
       console.error('Other error:', error);
     }
   };
@@ -33,11 +33,9 @@ function GetEmployees() {
       if (response.status === 200) {
         setSelectedEmployee(response.data);
       } else {
-        // Handle error
         console.error('Error fetching employee details');
       }
     } catch (error) {
-      // Handle network or other errors
       console.error('Error fetching employee details:', error);
     }
   };

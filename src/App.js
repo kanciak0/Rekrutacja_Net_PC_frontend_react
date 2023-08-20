@@ -2,7 +2,7 @@ import React from 'react';
 import API_BASE_URL from './config';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { GetEmployees, CreateEmployee, DeleteEmployee, UpdateEmployee, Login, Register } from './Components/Components';
-import Navigation from './Components/Navigation'; // Update the import for Navigation
+import Navigation from './Components/Navigation'; 
 
 function App() {
   return (

@@ -18,7 +18,7 @@ function DeleteEmployee() {
          // Set the headers with the token
          const headers = {
              'Authorization': `bearer ${token}`,
-             'Content-Type': 'application/json', // You might need to set the content type based on your API's requirements
+             'Content-Type': 'application/json', 
          };
     try {
       const response = await axios.delete(`${API_BASE_URL}/Employee/DeleteEmployee/${employeeId}`,{headers : headers});

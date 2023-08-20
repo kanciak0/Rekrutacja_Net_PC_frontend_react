@@ -24,11 +24,9 @@ function Login() {
       const response = await axios.post(`${API_BASE_URL}/api/Auth/Login`, formData);
 
       if (response.status === 200) {
-        // Assuming the token is returned in the response data
         const token = response.data.token;
         localStorage.setItem('token', token);
 
-        // Display a success message or redirect the user to another page
         setResponseMessage('Login successful.');
 
       } else {
